@@ -26,6 +26,15 @@ app.get('/',function(req,res){
 res.sendFile(path.join(__dirname,'../src/index.html'));
 });
 
+app.get('/users',function(req,res){
+//hard coding data Mocking
+res.json([
+   {"Id":1,"Name":"Tina","email":"tina@gmail.com"},
+   {"Id":2,"Name":"Sourav","email":"sourav@gmail.com"},
+   {"Id":3,"Name":"Amlan","email":"Amlan@gmail.com"},
+]);
+});
+
 app.listen(port,function(err){
 if(err)
 {

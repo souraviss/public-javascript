@@ -8,7 +8,7 @@
     "node:src":"babel-node buildScript/httpServer.js",
     "test":"mocha --reporter progress buildScript/testSetup.js \"src/**/*.test.js\"",
     "security-check":"nsp check",
-    "localtunnel":"lt --port 3000 --subdomain sourav",
+    "share1":"lt --port 3000 --subdomain sourav",
     "share":"npm-run-all --parallel localtunnel",
     "lint":"esw webpack.config.* src buildScript --color",
     "lint:watch":"npm run lint -- --watch",
